@@ -1,0 +1,691 @@
+/* --------GENERAL---------- */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #f5f1e1;
+    overflow-x: hidden !important;
+    font-size: 1.05rem;
+}
+section, header {
+    overflow-x: hidden !important;
+}
+.container, header {
+    max-width: 1200px;
+}
+.logo {
+    max-width: 280px;
+}
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 2px #bb4c00;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing:-1px;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.form-row ul {
+    list-style-type: none;
+    color: #f50404;
+    padding: 0;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    text-align: left;
+}
+.error label {
+    color: red!important;
+}
+.error input {
+    border-color: red;
+    color: red!important;
+}
+#mensurations h1, #corpulence h1 {
+    font-size: 2rem;
+}
+#final .h1, #final h1 {
+    font-size: 2.2rem;
+}
+.h1, h1, .h2, h2 {
+    font-size: 2.2rem;
+}
+p {
+    font-size: 1.1rem;
+}
+.lead {
+    line-height: 1.6rem;
+}
+header {
+    height: 50vh;
+    background: url('../index_files/header2.png') no-repeat scroll top;
+    background-size: cover;
+
+    /*height: 300px;*/
+    position: relative;
+    /*background: url(../images/bg.webp) scroll top center no-repeat;*/
+    overflow: hidden;
+}
+.text-warning {
+    color: #ec5301 !important;
+}
+#femme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+}
+#vague {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+}
+#bouteille {
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    width: 160px;
+}
+.text-primary {
+    color: #ff7b14 !important;
+}
+.btn-man {
+    width: 150px;
+    height: 150px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#93dee2+0,2cafc9+100 */
+    background: #93dee2; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #93dee2 0%, #2cafc9 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #93dee2 0%,#2cafc9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #93dee2 0%,#2cafc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93dee2', endColorstr='#2cafc9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    padding: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    line-height: 1rem;
+
+}
+a:hover.btn-man, a:hover.btn-woman {
+    color: #fff !important;
+    text-decoration: none;
+}
+.btn-woman {
+    width: 150px;
+    height: 150px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffbcd6+0,ff66a3+100 */
+    background: #ffbcd6; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffbcd6 0%, #ff66a3 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffbcd6 0%,#ff66a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #ffbcd6 0%,#ff66a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbcd6', endColorstr='#ff66a3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    padding: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    line-height: 1rem;
+}
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+.pulse2 {
+    animation: pulse-animation 2.5s infinite;
+}
+#corpulence img {
+    max-width: 180px;
+}
+#choix img {
+    max-width: 180px;
+}
+#resultat .people {
+    max-width: 180px;
+}
+.btn-success, .btn-success:hover {
+    color: #fff;
+    background: #fd8413 !important;
+    border-color: #fd8413 !important;
+}
+.bg-primary {
+    background: #ff7b14 !important;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 7px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff7b14;
+    cursor: pointer;
+    border: 0;
+}
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff7b14;
+    cursor: pointer;
+    border: 0;
+}
+.animationhand {
+    animation: 3s infinite;
+    animation-name: leftToRight;
+    font-size: 26px;
+}
+@keyframes leftToRight {
+    0% {
+        transform:translate3d(10px,0,0);
+    }
+    50% {
+        transform:translate3d(-20px,0,0);
+    }
+    to {
+        transform:translate3d(10px,0,0);
+    }
+}
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+}
+.btn-block {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+#resultat .badge {
+    font-size: 1.1rem;
+}
+.arrows {
+    background: url(../images/arrows.webp) no-repeat top 50px center;
+    background-size: auto 50%;
+}
+.progress {
+    height: .8rem;
+}
+.lead.bg-light {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#curves-text {
+    width: calc(100% - 30px);
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+#current-weight {
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+}
+#current-weight-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 11%;
+    left: 5%;
+}
+#current-weight-text {
+    font-size: 1.25rem;
+    top: 17%;
+    position: absolute;
+    left: 5px;
+}
+#time {
+    position: absolute;
+    left: 48%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transform: rotate(30deg);
+    top: 44%;
+}
+#ideal-weight {
+    position: absolute;
+    right: 7%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    bottom: 24%;
+    color: #ad2c00;
+}
+#ideal-weight-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fe4505;
+    position: absolute;
+    bottom: 18%;
+    right: 9%;
+}
+#ideal-weight-text {
+    font-size: 1.25rem;
+    bottom: 10%;
+    position: absolute;
+    right: 15px;
+    color: #fff;
+}
+#packs .card h3 {
+    font-size: 1.5rem !important;
+}
+#packs .icon {
+    width: 15px;
+    position: relative;
+    top: -3px;
+}
+#packs .avantages {
+    margin-top: 5px !important;
+}
+#packs .list-group-item {
+    padding: .1rem .5rem;
+    background-color: transparent;
+    border: 0;
+}
+.avatar {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.title-testimonial {
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+#loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: #fff;
+    -webkit-animation: cssAnimation 3s forwards;
+    animation: cssAnimation 3s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.loader-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #ccc;
+    border-top-color: #ff7b14;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transform-origin: center;
+    animation: loader-rotate 2s linear infinite;
+}
+
+.loader-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.testimonials-text {
+    font-size: 0.8rem;
+}
+.review-card {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.review-rating {
+    font-size: .9rem;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.review-response {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid orange;
+    margin-top: 15px;
+}
+.review-card p {
+    font-size: 1rem;
+}
+#testimonials .badge {
+    font-size: .8rem;
+    margin-top: 0 !important;
+}
+#review-form {
+    border: 1px solid #b8b8b8;
+    text-align: left;
+}
+#stars {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#note {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    bottom: -10px;
+}
+.fa-star.text-muted {
+    color: #babfc3 !important;
+}
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    margin-bottom: 0;
+}
+.rate:not(:checked) > input {
+    display: none;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc107;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffc107;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #ffc107;
+}
+
+#packs .card {
+    border: 3px solid #28a745 !important;
+}
+
+#packs .card h3 {
+    font-size: 2.5rem !important;
+}
+#packs .lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#packs .bg-light {
+    background: #f5f1e1 !important;
+}
+
+h4 {
+    font-size: 1.8rem !important;
+}
+
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* --------MEDIA QUERIES---------- */
+@media(min-width:1199px) {
+    h4 {
+        font-size: 1.8rem !important;
+    }
+}
+@media(max-width:1199px) {
+
+    .lead {
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+    .text-muted {
+        font-size: 1rem;
+    }
+}
+@media(max-width:991px){
+    #stars {
+        font-size: 1.15rem;
+    }
+    #stars .mx-1 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    #note {
+        font-size: 2rem;
+    }
+    header.rounded {
+        border-radius: 0 !important;
+    }
+    #bouteille {
+        right: 50px;
+    }
+    #corpulence img {
+        max-width: 150px;
+    }
+    #choix img {
+        max-width: 150px;
+    }
+    .h1, h1 {
+        font-size: 2rem !important;
+    }
+    .h2, h2 {
+        font-size: 1.8rem;
+    }
+    #current-weight-text {
+        font-size: .8rem;
+        top: 23%;
+        left: 2%;
+    }
+    #ideal-weight-cursor {
+        bottom: 17%;
+        right: 8%;
+    }
+    #ideal-weight-text {
+        font-size: .8rem;
+        bottom: 8%;
+    }
+    #current-weight {
+        top: -4%;
+        font-size: 1.15rem;
+    }
+    #ideal-weight {
+        right: 6%;
+        bottom: 25%;
+        font-size: 1.15rem;
+    }
+    #time {
+        font-size: 1.15rem;
+        top: 42%;
+    }
+    #resultat .card-body {
+        padding: .5rem !important;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    #bottles {
+        max-width: 250px;
+        margin-top: 10px;
+    }
+}
+@media(max-width:767px){
+    header {
+        background-image: url('../index_files/header2.png');
+        background-position: bottom;
+        height: 45vh;
+    }
+    header h1 {
+        font-size: 1.8rem !important;
+    }
+    #femme {
+        width: 350px;
+    }
+    #bouteille {
+        width: 120px;
+    }
+    .logo {
+        max-width: 250px;
+    }
+    .arrows {
+        background-size: auto 30%;
+    }
+
+}
+@media(max-width:667px){
+    .h1, h1 {
+        font-size: 1.75rem !important;
+    }
+    #bouteille {
+        width: 105px;
+        right: 30px;
+    }
+    #femme {
+        width: 300px;
+    }
+}
+@media(max-width:575px){
+    .h1, h1, .h2, h2 {
+        font-size: 1.5rem !important;
+    }
+    #final .h2, #final h2 {
+        font-size: 1.75rem;
+    }
+    .card .h2 {
+        font-size: 1.5rem;
+    }
+    .card h3 {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1.05rem;
+        line-height: 1.1;
+    }
+    header {
+        height: 320px;
+    }
+    header .col-9 {
+        margin-right: 0 !important;
+        margin-top: 20px;
+    }
+    header .align-items-center {
+        -ms-flex-align: inherit !important;
+        align-items: inherit !important;
+    }
+    #femme {
+        left: -60px;
+    }
+    #bouteille {
+        width: 95px;
+        right:80px;
+    }
+    #resultat .people {
+        max-width: 100px;
+    }
+    .lead.bg-light {
+        font-size: 1.25rem;
+    }
+    #ideal-weight-cursor {
+        bottom: 15%;
+        right: 8%;
+    }
+    #ideal-weight-text {
+        font-size: .8rem;
+        bottom: 4%;
+    }
+    #packs .card-body {
+        padding: .5rem;
+    }
+    .avatar {
+        max-width: 75px;
+    }
+    .logo {
+        max-width: 210px;
+    }
+    #vague {
+        bottom: 0;
+    }
+}
+@media(max-width:374px){
+    .h1, h1 {
+        font-size: 1.4rem;
+    }
+    .lead, p.text-muted {
+        font-size: 1rem;
+        line-height:1.1;
+    }
+    .btn-man, .btn-woman {
+        width: 130px;
+        height: 130px;
+        padding: 12px;
+    }
+}
